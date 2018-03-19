@@ -15,6 +15,11 @@ a:hover {
   color: #fec503;
 }
 
+a.meetup  {
+  color: white;
+  text-decoration: none;
+}
+
 .text-primary {
   color: #E98E36 !important;
 }
