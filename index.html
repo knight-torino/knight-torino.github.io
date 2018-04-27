@@ -174,145 +174,207 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Location</h2>
-            <h3 class="section-subheading text-muted">Per ora sappiamo solo che sarà a Torino ¯\_(ツ)_/¯</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <!-- Services -->
-    <section class="bg-light" id="sponsors">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">in partnership con</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <a href="http://gdgtorino.it/">
-              <img src="img/logos/gdg_logo.png"/>
-              <h4 class="service-heading">GDG Torino</h4>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2 class="section-heading text-uppercase"></h2>
-              <h3 class="section-subheading text-muted"></h3>
-            </div>
-          </div>
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Sponsor</h2>
-            <h3 class="section-subheading text-muted">senza i quali non ce l'avremmo fatta!</h3>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-6">
-            <a href="http://it.droidcon.com/2018/">
-              <img src="img/logos/droidcon_turin.png"/>
-              <h4 class="service-heading">droidcon Italy</h4>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <a href="http://www.androiddevs.it/">
-              <img src="img/logos/adi_logo.png"/>
-              <h4 class="service-heading">Android Devs Italy</h4>
-            </a>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-6">
-            <a href="https://www.kotlincommunityconf.com/">
-              <img src="img/logos/kotlin_community_conf.png"/>
-              <h4 class="service-heading">Kotlin Community Conf</h4>
-            </a>
-          </div>
-          <div class="col-md-6">
-            <a href="http://www.photobysc.it/">
-              <img src="img/logos/stefano_cantu_logo.png"/>
-              <h4 class="service-heading">Stefano Cantù</h4>
-            </a>
-          </div>
+            <div id="map"></div>
+            <script>
+              function initMap() {
+                var agoraI3p = {lat: 45.065124, lng: 7.657676};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 17,
+                  center: agoraI3p
+                });
+                var marker = new google.maps.Marker({
+                  position: agoraI3p,
+                  map: map
+                });
+              }
+            </script>
+            <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_Sh0QtRyzg77ZV2qEcSRDcq1xN7ew8dI&callback=initMap">
+          </script>
         </div>
       </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <span class="copyright">Copyright &copy; Kotlin Night Torino 2018</span>
-          </div>
-          <div class="col-md-6">
-            <span class="copyright">
-              <a href="https://twitter.com/hashtag/knightTo2018">#knightTo2018</a>
-            </span>
-          </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading"></h2>
+          <h4 class="section-heading text-uppercase">Agorà I3P</h4>
+          <p class="section-subheading text-muted">I3P S.c.p.a., Corso Castelfidardo 30\a, Torino</p>
         </div>
       </div>
-    </footer>
-    
-    <div class="portfolio-modal modal fade" id="fabiocollini" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+    </div>
+  </section>
+  
+  <!-- Services -->
+  <section class="bg-light" id="sponsors">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">in partnership con</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <a href="http://gdgtorino.it/">
+            <img src="img/logos/gdg_logo.png"/>
+            <h4 class="service-heading">GDG Torino</h4>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase"></h2>
+          <h3 class="section-subheading text-muted"></h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Sponsor</h2>
+          <h3 class="section-subheading text-muted">senza i quali non ce l'avremmo fatta!</h3>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <a href="http://it.droidcon.com/2018/">
+            <img src="img/logos/droidcon_turin.png"/>
+            <h4 class="service-heading">droidcon Italy</h4>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="http://www.androiddevs.it/">
+            <img src="img/logos/adi_logo.png"/>
+            <h4 class="service-heading">Android Devs Italy</h4>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="https://www.i3p.it/">
+            <img src="img/logos/i3p.png"/>
+            <h4 class="service-heading">I3P S.c.p.a</h4>
+          </a>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <a href="https://www.kotlincommunityconf.com/">
+            <img src="img/logos/kotlin_community_conf.png"/>
+            <h4 class="service-heading">Kotlin Community Conf</h4>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="http://www.photobysc.it/">
+            <img src="img/logos/stefano_cantu_logo.png"/>
+            <h4 class="service-heading">Stefano Cantù</h4>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="http://www.treatabit.com/">
+            <img src="img/logos/treatabit.png"/>
+            <h4 class="service-heading">Treatabit</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <span class="copyright">Copyright &copy; Kotlin Night Torino 2018</span>
+        </div>
+        <div class="col-md-6">
+          <span class="copyright">
+            <a href="https://twitter.com/hashtag/knightTo2018">#knightTo2018</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="portfolio-modal modal fade" id="fabiocollini" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-12 mx-auto">
-                <div class="modal-body">
-                  <h2 class="text-uppercase">Async code on kotlin: RxJava or/and coroutines</h2>
-                  <p class="item-intro text-muted text-uppercase">Fabio Collini</p>
-                  <ul class="list-inline">
-                    <li><b>Ore 19:15</b></li>
-                  </ul>
-                  <p>Scrivere codice asincrono non è mai stato facile ma fortunatamente ci sono molte librerie per gestirlo senza aggiungere troppa complessità. Negli ultimi anni RxJava e le altre librerie ReactiveX sono diventate molto popolari ma da meno di un anno c'è un nuovo modo per gestire il codice asincrono in kotlin: le coroutines.
-                    In questo talk vedremo pregi e difetti di questi due approcci e come sfruttarli per semplificare il codice asincrono. Risolvono lo stesso problema? Possono essere usate insieme o sono alternative? Quale delle due permette di scrivere codice funzionale?
-                    Spoiler alert: sono due ottime librerie!</p>
-                    <img class="img-fluid d-block mx-auto col-lg-4" src="img/speakers/fabio_collini_800x800.jpg" alt="">
-                    <p>Fabio Collini è un Google Developer Expert per Android, ha iniziato a sviluppare per il sistema operativo mobile di Google nel 2009, prima come freelance con due app sul Play Store e poi come senior developer. Adesso lavora in Nana Bianca, uno startup accelerator a Firenze. Inoltre, è uno degli autori della seconda edizione di Android Programmazione Avanzata, un libro italiano dedicato ad alcuni aspetti avanzati dello sviluppo su Android. Ha scritto vari post disponibili su medium e su CodingJam, il blog di cui è co-owner dedicato a Java, Android e web development.</p>
-                    <button class="btn btn-primary" data-dismiss="modal" type="button">
-                      <i class="fa fa-times"></i>
-                      Chiudi</button>
-                    </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <div class="modal-body">
+                <h2 class="text-uppercase">Async code on kotlin: RxJava or/and coroutines</h2>
+                <p class="item-intro text-muted text-uppercase">Fabio Collini</p>
+                <ul class="list-inline">
+                  <li><b>Ore 19:15</b></li>
+                </ul>
+                <p>Scrivere codice asincrono non è mai stato facile ma fortunatamente ci sono molte librerie per gestirlo senza aggiungere troppa complessità. Negli ultimi anni RxJava e le altre librerie ReactiveX sono diventate molto popolari ma da meno di un anno c'è un nuovo modo per gestire il codice asincrono in kotlin: le coroutines.
+                  In questo talk vedremo pregi e difetti di questi due approcci e come sfruttarli per semplificare il codice asincrono. Risolvono lo stesso problema? Possono essere usate insieme o sono alternative? Quale delle due permette di scrivere codice funzionale?
+                  Spoiler alert: sono due ottime librerie!</p>
+                  <img class="img-fluid d-block mx-auto col-lg-4" src="img/speakers/fabio_collini_800x800.jpg" alt="">
+                  <p>Fabio Collini è un Google Developer Expert per Android, ha iniziato a sviluppare per il sistema operativo mobile di Google nel 2009, prima come freelance con due app sul Play Store e poi come senior developer. Adesso lavora in Nana Bianca, uno startup accelerator a Firenze. Inoltre, è uno degli autori della seconda edizione di Android Programmazione Avanzata, un libro italiano dedicato ad alcuni aspetti avanzati dello sviluppo su Android. Ha scritto vari post disponibili su medium e su CodingJam, il blog di cui è co-owner dedicato a Java, Android e web development.</p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Chiudi</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-        <div class="portfolio-modal modal fade" id="borisdamato" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                  <div class="rl"></div>
+      </div>
+      
+      <div class="portfolio-modal modal fade" id="borisdamato" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 mx-auto">
+                  <div class="modal-body">
+                    <h2 class="text-uppercase">Kotlin Everywhere: share your kotlin code across platforms</h2>
+                    <p class="item-intro text-muted text-uppercase">Boris D'Amato</p>
+                    <ul class="list-inline">
+                      <li><b>Ore 19:45</b></li>
+                    </ul>
+                    <p>Quante volte ci siamo trovati a dover scrivere più volte lo stesso codice per più piattaforme utilizzando diversi linguaggi di programmazione? Se la risposta è molte/troppe, allora Kotlin è la soluzione! Incominciando dalla versione 1.2, Kotlin ha introdotto supporto sperimentale per progetti multi-piattaforma consentendoci di avere una singola code-base Kotlin e allo stesso tempo poter riutilizzare il nostro codice in progetti JVM, Web, Android, iOS e KotlinNative. Se finalmente vuoi smettere di sprecare risorse inutili riscrivendo lo stesso codice per ogni piattaforma e vuoi iniziare a investire il tuo tempo nel realizzare app fantastiche, unisciti a me e avventuriamoci nello sviluppo multi-piattaforma con Kotlin!</p>
+                    <img class="img-fluid d-block mx-auto col-lg-4" src="img/speakers/boris_damato.jpg" alt="">
+                    <p>Boris è sviluppatore Android presso Enjore e Organizer del Google Developers Group Bari.
+                      Gli piace partecipare a conferenze tecnologiche, tenere talk, condividere conoscenza e imparare nuove cose, ma soprattutto adora realizzare app dedicando particolare attenzione all'interfaccia e alle performance. Gli piace inoltre imparare nuovi linguaggi e ha un particolare interesse per i pattern architetturali.</p>
+                      <button class="btn btn-primary" data-dismiss="modal" type="button">
+                        <i class="fa fa-times"></i>
+                        Chiudi</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-12 mx-auto">
-                    <div class="modal-body">
-                      <h2 class="text-uppercase">Kotlin Everywhere: share your kotlin code across platforms</h2>
-                      <p class="item-intro text-muted text-uppercase">Boris D'Amato</p>
-                      <ul class="list-inline">
-                        <li><b>Ore 19:45</b></li>
-                      </ul>
-                      <p>Quante volte ci siamo trovati a dover scrivere più volte lo stesso codice per più piattaforme utilizzando diversi linguaggi di programmazione? Se la risposta è molte/troppe, allora Kotlin è la soluzione! Incominciando dalla versione 1.2, Kotlin ha introdotto supporto sperimentale per progetti multi-piattaforma consentendoci di avere una singola code-base Kotlin e allo stesso tempo poter riutilizzare il nostro codice in progetti JVM, Web, Android, iOS e KotlinNative. Se finalmente vuoi smettere di sprecare risorse inutili riscrivendo lo stesso codice per ogni piattaforma e vuoi iniziare a investire il tuo tempo nel realizzare app fantastiche, unisciti a me e avventuriamoci nello sviluppo multi-piattaforma con Kotlin!</p>
-                      <img class="img-fluid d-block mx-auto col-lg-4" src="img/speakers/boris_damato.jpg" alt="">
-                      <p>Boris è sviluppatore Android presso Enjore e Organizer del Google Developers Group Bari.
-                        Gli piace partecipare a conferenze tecnologiche, tenere talk, condividere conoscenza e imparare nuove cose, ma soprattutto adora realizzare app dedicando particolare attenzione all'interfaccia e alle performance. Gli piace inoltre imparare nuovi linguaggi e ha un particolare interesse per i pattern architetturali.</p>
+            </div>
+          </div>
+          
+          <div class="portfolio-modal modal fade" id="leonardopirro" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                    <div class="rl"></div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 mx-auto">
+                      <div class="modal-body">
+                        <h2 class="text-uppercase">Better Async With Kotlin Coroutines</h2>
+                        <p class="item-intro text-muted text-uppercase">Leonardo Pirro</p>
+                        <ul class="list-inline">
+                          <li><b>Ore 18:45</b></li>
+                        </ul>
+                        <p>Le coroutines sono una delle più grandi novità introdotte in Kotlin 1.1 e sono uno strumento molto potente per scrivere codice asincrono in modo efficiente e per rimuovere le “callback hell”, rendendo il codice molto più pulito e descrittivo. In questo talk scropriremo i suoi principi base e quanto è semplice implementarle nei nostri progetti.</p>
+                        <img class="img-fluid d-block mx-auto col-lg-4" src="img/speakers/leonardo_pirro.png" alt="">
+                        <p>Nato nel 1993 a San Giovanni Rotondo, Puglia. Sin dalla giovane età mi sono avvicinato al mondo della tecnologia e dello sviluppo software. Android User since 2010, attualmente lavoro come Android Developer in IQUII, a Roma. Seguo tutto ciò che riguarda il mondo Google, in particolare Android e Assistant. Mi piace tutto ciò che riguarda il design e la UX. Ho una smodata passione per le architetture software e la pulizia del codice e nel tempo libero amo leggere, guardare Film/Serie TV o bere una birra in compagnia.</p>
                         <button class="btn btn-primary" data-dismiss="modal" type="button">
                           <i class="fa fa-times"></i>
                           Chiudi</button>
@@ -324,7 +386,7 @@
               </div>
             </div>
             
-            <div class="portfolio-modal modal fade" id="leonardopirro" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="portfolio-modal modal fade" id="omarmiatello" tabindex="-1" role="dialog" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="close-modal" data-dismiss="modal">
@@ -336,49 +398,18 @@
                     <div class="row">
                       <div class="col-lg-12 mx-auto">
                         <div class="modal-body">
-                          <h2 class="text-uppercase">Better Async With Kotlin Coroutines</h2>
-                          <p class="item-intro text-muted text-uppercase">Leonardo Pirro</p>
+                          <h2 class="text-uppercase">Google Cloud Functions: try { Kotlin } insteadOf JavaScript</h2>
+                          <p class="item-intro text-muted text-uppercase">Omar Miatello</p>
                           <ul class="list-inline">
-                            <li><b>Ore 18:45</b></li>
+                            <li><b>Ore 20:15</b></li>
                           </ul>
-                          <p>Le coroutines sono una delle più grandi novità introdotte in Kotlin 1.1 e sono uno strumento molto potente per scrivere codice asincrono in modo efficiente e per rimuovere le “callback hell”, rendendo il codice molto più pulito e descrittivo. In questo talk scropriremo i suoi principi base e quanto è semplice implementarle nei nostri progetti.</p>
-                          <img class="img-fluid d-block mx-auto col-lg-4" src="img/speakers/leonardo_pirro.png" alt="">
-                          <p>Nato nel 1993 a San Giovanni Rotondo, Puglia. Sin dalla giovane età mi sono avvicinato al mondo della tecnologia e dello sviluppo software. Android User since 2010, attualmente lavoro come Android Developer in IQUII, a Roma. Seguo tutto ciò che riguarda il mondo Google, in particolare Android e Assistant. Mi piace tutto ciò che riguarda il design e la UX. Ho una smodata passione per le architetture software e la pulizia del codice e nel tempo libero amo leggere, guardare Film/Serie TV o bere una birra in compagnia.</p>
-                          <button class="btn btn-primary" data-dismiss="modal" type="button">
-                            <i class="fa fa-times"></i>
-                            Chiudi</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="portfolio-modal modal fade" id="omarmiatello" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="close-modal" data-dismiss="modal">
-                      <div class="lr">
-                        <div class="rl"></div>
-                      </div>
-                    </div>
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-lg-12 mx-auto">
-                          <div class="modal-body">
-                            <h2 class="text-uppercase">Google Cloud Functions: try { Kotlin } insteadOf JavaScript</h2>
-                            <p class="item-intro text-muted text-uppercase">Omar Miatello</p>
-                            <ul class="list-inline">
-                              <li><b>Ore 20:15</b></li>
-                            </ul>
-                            <p>Siete sviluppatori Android e adorate Kotlin al punto che non potete più farne a meno? Vorreste utilizzarlo anche per scrivere dei servizi remoti, magari utilizzando una soluzione gratuita che vi permetta di  concentrandovi solo sul codice?!
-                              Vi mostrerò i passi per iniziare a scrivere le Cloud Functions for Firebase utilizzando Kotlin/JS per realizzare backend che possano gestire gratuitamente le richieste di un progetto amatoriale e siano tranquillamente in grado di supportare carichi più elevati, "at Google scale".</p>
-                              <img class="img-fluid d-block mx-auto col-lg-4" src="img/speakers/omar_miatello_profile.jpg" alt="">
-                              <p>Bio: "hey Google, parlami di Omar Miatello".<br/>
-                                  Sviluppatore Android per Satispay. Segue le novità tecnologie e ultimamente sta esplorando le possibilità offerte dal mondo di Google Assistant.<br/>
-                                  Da un paio di anni organizza eventi per la community del GDG Milano.<br/>
-                                  Nel tempo libero, quando lo trova, fa canyoning, guarda serie tv e gioca a Overwatch.</p>
+                          <p>Siete sviluppatori Android e adorate Kotlin al punto che non potete più farne a meno? Vorreste utilizzarlo anche per scrivere dei servizi remoti, magari utilizzando una soluzione gratuita che vi permetta di  concentrandovi solo sul codice?!
+                            Vi mostrerò i passi per iniziare a scrivere le Cloud Functions for Firebase utilizzando Kotlin/JS per realizzare backend che possano gestire gratuitamente le richieste di un progetto amatoriale e siano tranquillamente in grado di supportare carichi più elevati, "at Google scale".</p>
+                            <img class="img-fluid d-block mx-auto col-lg-4" src="img/speakers/omar_miatello_profile.jpg" alt="">
+                            <p>Bio: "hey Google, parlami di Omar Miatello".<br/>
+                              Sviluppatore Android per Satispay. Segue le novità tecnologie e ultimamente sta esplorando le possibilità offerte dal mondo di Google Assistant.<br/>
+                              Da un paio di anni organizza eventi per la community del GDG Milano.<br/>
+                              Nel tempo libero, quando lo trova, fa canyoning, guarda serie tv e gioca a Overwatch.</p>
                               <button class="btn btn-primary" data-dismiss="modal" type="button">
                                 <i class="fa fa-times"></i>
                                 Chiudi</button>
